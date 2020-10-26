@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Landing-SSOBoard/precache-manifest.b51515abc9b22ed0c7c21e7708dd4010.js"
+  "/Landing-SSOBoard/precache-manifest.ad7a6789c4f1e99046338876cda9e543.js"
 );
 
 self.addEventListener('message', (event) => {

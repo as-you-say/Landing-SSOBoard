@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cbd856ccd05d701cc32922f255e6ed2",
+    "revision": "0e6269668afc78d04813965b0bb49396",
     "url": "/Landing-SSOBoard/index.html"
   },
   {
-    "revision": "f6ee36e46258aaccd876",
+    "revision": "9182776a3dfb203ceb4b",
     "url": "/Landing-SSOBoard/static/css/main.bca7b34d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Landing-SSOBoard/static/js/2.5499fc3a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f6ee36e46258aaccd876",
-    "url": "/Landing-SSOBoard/static/js/main.7205364e.chunk.js"
+    "revision": "9182776a3dfb203ceb4b",
+    "url": "/Landing-SSOBoard/static/js/main.d3f7cebd.chunk.js"
   },
   {
     "revision": "a838f8fdab684a7ae26e",
