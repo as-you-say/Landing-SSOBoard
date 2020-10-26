@@ -1,0 +1,80 @@
+#side-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: $header-height;
+  height: 100vh;
+  width: 340px;
+  background-color: $background-color;
+  z-index: 201;
+  transition: left .5s;
+  &.fold {
+    left: -33%;
+    transition: all .5s;
+    &~#board{
+      padding-left: 0;
+    }
+  }
+}
+
+.side-bar {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+
+  .title {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 12px;
+    color: $shadow-color;
+    font-weight: bold;
+    .text {
+      float: left;
+    }
+    .icons {
+      position: absolute;
+      right: 12px;
+      top: 60%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      svg {
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover {
+          color: $main-color;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+
+  .list {
+    display: block;
+    margin-top: 10px;
+    .menu {
+      height: 40px;
+      padding: 0 12px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba($color: #bebebe, $alpha: 0.2);
+      }
+      &.on {
+        color: $main-color;
+        background-color: #fff;
+        box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.1);
+      }
+      &>* {
+        float: left;
+      }
+      svg {
+        margin-right: 15px;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 40px;
+      }
+    }
+  }
+}

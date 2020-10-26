@@ -1,0 +1,108 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: #fff;
+  z-index: 301;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  box-shadow: 0 0 7px rgba($color: #000000, $alpha: 0.2);
+  &>* {
+    height: $header-height;
+    line-height: $header-height;
+  }
+
+  // Logo
+  .logo {
+    display: inline-block;
+    position: relative;
+    &>* {
+      float: left;
+      font-size: $logo-font-size;
+    }
+
+    // Logo - Icon
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+    }
+
+    // Logo - Text
+    .text {
+      padding-left: 40px;
+      font-family: 'Pacifico', serif;
+    }
+  }
+
+  // Profile
+  .profile {
+    float: right;
+    font-size: $profile-font-size;
+    &>* {
+      float: left;
+      height: $header-height;
+      line-height: $header-height;
+    }
+
+    .search {
+      position: relative;
+      svg {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        color: #999;
+      }
+      input {
+        float: left;
+        font-size: 14px;
+        height: 30px;
+        margin-top: 13px;
+        padding: 10px 8px;
+        padding-left: 35px;
+        width: 200px;
+        border: 2px solid #bbb;
+        border-radius: 3px;
+        outline: none;
+        &:focus {
+          border: 2px solid $shadow-color;
+          transition: all .3s;
+          &+svg {
+            color: $shadow-color;
+            transition: all .3s;
+          }
+        }
+      }
+    }
+
+    // Profile - Menu
+    .menu {
+      margin-left: 20px;
+      svg {
+        margin-top: calc((#{$header-height} - #{$profile-font-size})/2);
+        float: left;
+      }
+      .image {
+        position: relative;
+        height: 100%;
+        img {
+          margin-top: calc((#{$header-height} - #{$profile-image-size})/2);
+          width: $profile-image-size;
+          height: $profile-image-size;
+          border-radius: 50%;
+          background-color: #fff;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
